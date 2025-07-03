@@ -1,0 +1,75 @@
+@use "./style/variables.scss" as *;
+@use "sass:color";
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: $gray-blue-600;
+}
+
+.introduction {
+  max-width: 800px;
+  background-color: $gray-50;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border: 2px solid  $gray-blue-900;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: $dark-bg;
+  }
+}
+
+.MyPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark-bg;
+  font-size: 1rem;
+
+  img {
+    border-radius: 50%;
+    border: 3px solid $taupe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+  }
+
+
+}
+
+.MySocialMidias {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+
+  .motionBtn {
+    background-color: $gray-blue-600;
+    color: $ivory;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+
+    &:hover {
+     background-color: color.adjust($taupe, $lightness: -10%);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@use "../style/variables.scss" as *;
+@use "sass:color";
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: $gray-blue-100; 
+  border-bottom: 2px solid $gray-blue-300; 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.me {
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $gray-blue-900; 
+    margin: 0;
+  }
+}
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;       
+}
+.headerBtns {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto; 
+
+  
+   .motionBtn {
+  background-color: $gray-blue-600;
+  color: $white;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;  
+
+  &:hover,
+  &:focus {
+     background-color: $taupe;
+    outline: none;
+    text-decoration: none; 
+  }
+}
+  
+}

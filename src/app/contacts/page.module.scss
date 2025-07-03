@@ -1,0 +1,27 @@
+@use "../style/variables.scss" as *;
+@use "sass:color";
+
+.contactsSection {
+  padding: 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: $gray-blue-900;
+  }
+
+  .contactItem {
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+
+    a {
+      color: $dark-bg;
+      text-decoration: underline;
+
+      &:hover {
+        color:$mint-800;
+      }
+    }
+  }
+}

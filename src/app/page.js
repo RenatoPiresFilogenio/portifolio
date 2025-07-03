@@ -1,95 +1,75 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+"use client";
+import * as motion from "motion/react-client";
+import style from "./page.module.scss"
+import Image from 'next/image';
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+<main className={style.aboutMe}>
+  <section className={style.introduction}>
+    <p>
+      Oi, eu sou o Renato, tenho 20 anos e venho me dedicando ao desenvolvimento de software há cerca de 3 anos. Nesse tempo, tive a oportunidade de trabalhar 
+      em projetos pessoais e acadêmicos usando tecnologias como React, React Native e Next.js. Também tenho experiência com bancos de dados relacionais como MariaDB e PostgreSQL,
+      além de versionamento com Git e metodologias ágeis, especialmente Scrum. Sou alguém que gosta de aprender na prática, buscando sempre aprimorar minhas habilidades e aplicar soluções eficientes. 
+      Estou aberto a novos desafios e oportunidades para crescer profissionalmente e contribuir com projetos que realmente façam a diferença.
+    </p>
+      <br/>
+    <p>
+      Atualmente, curso Sistemas de Informação na Fundação Hermínio Ometto (FHO), 
+      onde venho fortalecendo minha base teórica e prática em desenvolvimento de software. 
+      Meu principal foco está no back-end, especialmente em aplicações web com Node.js, 
+      mas também gosto de explorar o front-end para entregar soluções completas.
+      Estou em busca de uma oportunidade de estágio onde eu possa evoluir como desenvolvedor, 
+      colaborar com times engajados e contribuir com projetos reais que impactem positivamente as pessoas e os negócios.
+    </p>
+  </section>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  <section className={style.MyPhoto}>
+    <Image
+      src="/img/eu.png"
+      alt="Minha foto"
+      width={100}
+      height={100}
+    />
+    <span>Olha eu aí!!</span>
+  </section>
+
+    <section className={style.MySocialMidias}>
+      <h2>Redes Sociais:</h2>
+       
+      <motion.div>
+                  <a
+                    href="https://github.com/RenatoPiresFilogenio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={style.motionBtn}
+                  >
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      style={{ display: 'inline-block' }}
+                    >
+                      Github
+                    </motion.span>
+                  </a>
+                  
+                  <a
+                    href="https://www.linkedin.com/in/renato-pires-filogenio-774434262/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={style.motionBtn}
+                  >
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      style={{ display: 'inline-block' }}
+                    >
+                      Linkedin
+                    </motion.span>
+                  </a>
+      </motion.div>
+    </section>
+</main>
+
   );
 }
