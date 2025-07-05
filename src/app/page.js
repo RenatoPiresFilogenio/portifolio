@@ -31,7 +31,6 @@ export default function Home() {
       width={100}
       height={100}
     />
-    <span>Olha eu aí!!</span>
   </section>
 
     <section className={style.MySocialMidias}>

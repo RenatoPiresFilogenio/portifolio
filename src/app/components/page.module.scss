@@ -1,51 +1,79 @@
 @use "../style/variables.scss" as *;
 @use "sass:color";
+
 .header {
   display: flex;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: $gray-blue-100; 
-  border-bottom: 2px solid $gray-blue-300; 
+  background-color: $gray-blue-100;
+  border-bottom: 2px solid $gray-blue-300;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  // Mobile adjustments
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
 }
 
 .me {
   h1 {
     font-size: 1.6rem;
     font-weight: 700;
-    color: $gray-blue-900; 
+    color: $gray-blue-900;
     margin: 0;
+
+    @media (max-width: 600px) {
+      font-size: 1.3rem;
+    }
   }
 }
+
 .headerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;       
+  width: 100%;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
+
 .headerBtns {
   display: flex;
   gap: 1rem;
-  margin-left: auto; 
+  margin-left: auto;
 
-  
-   .motionBtn {
-  background-color: $gray-blue-600;
-  color: $white;
-  border: none;
-  padding: 0.5rem 1.1rem;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;  
-
-  &:hover,
-  &:focus {
-     background-color: $taupe;
-    outline: none;
-    text-decoration: none; 
+  @media (max-width: 600px) {
+    margin-left: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
-}
-  
-}
+
+  .motionBtn {
+    background-color: $gray-blue-600;
+    color: $white;
+    border: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: $taupe;
+      outline: none;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%; 
+    }
+  }}

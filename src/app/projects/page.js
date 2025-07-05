@@ -20,7 +20,7 @@ const projects = [
   {
     title: "SolarSmart",
     description: "Sistema desenvolvido em Java para cálculo de energia solar, baseado no consumo do imóvel ou de  " +
-    "cômodos específicos. Criado para apresentação na feira de ciências da faculdade.",
+    "cômodos específicos. Desenvolvido para a feira científica , Congresso Científico da Fundação Hermínio Ometto (FHO).",
     techs: ["Java"],
     github: "https://github.com/RenatoPiresFilogenio/SolarSmart",
     deploy:"",

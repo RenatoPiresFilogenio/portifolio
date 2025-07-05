@@ -13,7 +13,7 @@ export default function Header() {
         className={style.headerContent}
       >
         <div className={style.me}>
-          <h1>Seja bem vindo ao meu portifolio |</h1>
+          <h1>Seja bem vindo ao meu portifolio </h1>
         </div>
         <div className={style.headerBtns}>
           
