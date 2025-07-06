@@ -9,7 +9,7 @@ const projects = [
     description: "Sistema web completo desenvolvido para uma docearia local. Permite o cadastro de ingredientes e" + 
     " a criação de produtos com base nos insumos utilizados, calculando automaticamente o custo de cada item. O sistema é " 
     +"fechado para uso da empresa, mas está disponível para testes",
-    techs: ["Node.js", "React", "PostGre", "Next.js"],
+    techs: ["Node.js", "React", "PostGre", "Next.js ",  "JavaScript"],
     github: "https://github.com/RenatoPiresFilogenio/sistemaDocearia",
     deploy:"https://sistema-docearia-81an.vercel.app/",
     img: " ",
@@ -23,6 +23,19 @@ const projects = [
     "cômodos específicos. Desenvolvido para a feira científica , Congresso Científico da Fundação Hermínio Ometto (FHO).",
     techs: ["Java"],
     github: "https://github.com/RenatoPiresFilogenio/SolarSmart",
+    deploy:"",
+    img: " ",
+    loginTeste: [
+      { email: "", senha: "" }
+    ]
+  },
+   {
+    title: "TarefasHoje",
+    description: "Uma aplicação simples e funcional de lista de tarefas, "+
+    "desenvolvida em React Native. Ideal para quem quer manter o dia organizado de"+
+    " forma leve e prática, tanto no Android quanto no iOS.",
+    techs: ["React Native", "JavaScript"],
+    github: "https://github.com/RenatoPiresFilogenio/TarefasHoje/blob/main/README.md",
     deploy:"",
     img: " ",
     loginTeste: [
