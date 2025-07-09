@@ -7,15 +7,11 @@ const projects = [
   {
     title: "CandyTrack",
     description: "Sistema web completo desenvolvido para uma docearia local. Permite o cadastro de ingredientes e" + 
-    " a criação de produtos com base nos insumos utilizados, calculando automaticamente o custo de cada item. O sistema é " 
-    +"fechado para uso da empresa, mas está disponível para testes",
+    " a criação de produtos com base nos insumos utilizados, calculando automaticamente o custo de cada item.",
     techs: ["Node.js", "React", "PostGre", "Next.js ",  "JavaScript"],
     github: "https://github.com/RenatoPiresFilogenio/sistemaDocearia",
     deploy:"https://sistema-docearia-81an.vercel.app/",
-    img: " ",
-    loginTeste: [
-      { email: "arroba@gmail", senha: "1" }
-    ]
+    img: " "
   },
   {
     title: "SolarSmart",
@@ -24,10 +20,7 @@ const projects = [
     techs: ["Java"],
     github: "https://github.com/RenatoPiresFilogenio/SolarSmart",
     deploy:"",
-    img: " ",
-    loginTeste: [
-      { email: "", senha: "" }
-    ]
+    img: " "
   },
    {
     title: "TarefasHoje",
@@ -37,10 +30,7 @@ const projects = [
     techs: ["React Native", "JavaScript"],
     github: "https://github.com/RenatoPiresFilogenio/TarefasHoje/blob/main/README.md",
     deploy:"",
-    img: " ",
-    loginTeste: [
-      { email: "", senha: "" }
-    ]
+    img: " "
   },
   
 ];
@@ -51,7 +41,7 @@ export default function Projects() {
       <h1>Projetos</h1>
 
       <p>
-        Aqui estão alguns dos projetos que venho desenvolvendo nos últimos tempos — sejam acadêmicos, pessoais ou fruto da minha curiosidade por aprender mais.
+        Aqui estão alguns dos projetos que venho desenvolvendo nos últimos tempos, sejam acadêmicos, pessoais ou fruto da minha curiosidade por aprender mais.
         Trabalho principalmente com Node.js e React, além de bancos de dados como MariaDB e PostgreSQL.
       </p>
 
