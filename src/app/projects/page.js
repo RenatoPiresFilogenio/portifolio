@@ -21,15 +21,15 @@ const projects = [
     github: "https://github.com/RenatoPiresFilogenio/SolarSmart",
     deploy:"",
     img: " "
-  },
+  },  
    {
-    title: "TarefasHoje",
-    description: "Uma aplicação simples e funcional de lista de tarefas, "+
-    "desenvolvida em React Native. Ideal para quem quer manter o dia organizado de"+
-    " forma leve e prática, tanto no Android quanto no iOS.",
-    techs: ["React Native", "JavaScript"],
-    github: "https://github.com/RenatoPiresFilogenio/TarefasHoje/blob/main/README.md",
-    deploy:"",
+    title: "Lista+",
+    description: "Desenvolvi uma aplicação simples e funcional de lista de tarefas, utilizando React, Next.js e Node.js."+
+"O projeto teve um foco especial no backend, onde aprofundei conhecimentos em segurança com Helmet, gerenciamento de CORS para comunicação entre frontend e backend, além da configuração correta de variáveis de ambiente para deploy em ambientes reais"+
+"Foi uma ótima oportunidade para entender o fluxo completo de uma aplicação web, desde a autenticação com tokens JWT até o tratamento de requisições protegidas e deploy em cloud.",
+   techs: ["Node.js", "React", "PostGre", "Next.js ",  "JavaScript"],
+    github: "https://github.com/RenatoPiresFilogenio/Lista-de-tarefas/blob/main/README.md",
+    deploy:"https://lista-de-tarefas-loie.vercel.app",
     img: " "
   },
   
